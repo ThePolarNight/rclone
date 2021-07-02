@@ -5,14 +5,14 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/accounting"
+	"github.com/ThePolarNight/rclone/fs/asyncreader"
+	"github.com/ThePolarNight/rclone/fs/chunkedreader"
+	"github.com/ThePolarNight/rclone/fs/fserrors"
+	"github.com/ThePolarNight/rclone/lib/ranges"
+	"github.com/ThePolarNight/rclone/vfs/vfscommon"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/accounting"
-	"github.com/rclone/rclone/fs/asyncreader"
-	"github.com/rclone/rclone/fs/chunkedreader"
-	"github.com/rclone/rclone/fs/fserrors"
-	"github.com/rclone/rclone/lib/ranges"
-	"github.com/rclone/rclone/vfs/vfscommon"
 )
 
 // FIXME implement max downloaders

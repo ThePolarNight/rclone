@@ -8,12 +8,12 @@ import (
 	"os"
 	"syscall"
 
+	"github.com/ThePolarNight/rclone/cmd/mountlib"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/log"
+	"github.com/ThePolarNight/rclone/vfs"
 	"github.com/hanwen/go-fuse/v2/fuse"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/cmd/mountlib"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/log"
-	"github.com/rclone/rclone/vfs"
 )
 
 // FS represents the top level filing system

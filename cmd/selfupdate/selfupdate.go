@@ -21,17 +21,17 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/cmd/cmount"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config/flags"
+	"github.com/ThePolarNight/rclone/fs/fshttp"
+	"github.com/ThePolarNight/rclone/lib/buildinfo"
+	"github.com/ThePolarNight/rclone/lib/random"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/cmd/cmount"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/flags"
-	"github.com/rclone/rclone/fs/fshttp"
-	"github.com/rclone/rclone/lib/buildinfo"
-	"github.com/rclone/rclone/lib/random"
 	"github.com/spf13/cobra"
 
-	versionCmd "github.com/rclone/rclone/cmd/version"
+	versionCmd "github.com/ThePolarNight/rclone/cmd/version"
 )
 
 // Options contains options for the self-update command

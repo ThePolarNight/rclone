@@ -13,14 +13,14 @@ import (
 	"strings"
 	"unicode/utf8"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/fs/config/configstruct"
+	"github.com/ThePolarNight/rclone/fs/config/obscure"
+	"github.com/ThePolarNight/rclone/fs/driveletter"
+	"github.com/ThePolarNight/rclone/fs/fspath"
+	"github.com/ThePolarNight/rclone/lib/terminal"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/config/obscure"
-	"github.com/rclone/rclone/fs/driveletter"
-	"github.com/rclone/rclone/fs/fspath"
-	"github.com/rclone/rclone/lib/terminal"
 	"golang.org/x/text/unicode/norm"
 )
 

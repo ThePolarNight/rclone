@@ -5,11 +5,11 @@ import (
 	"log"
 	"sync"
 
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/fs/rc/rcflags"
+	"github.com/ThePolarNight/rclone/fs/rc/rcserver"
+	"github.com/ThePolarNight/rclone/lib/atexit"
 	sysdnotify "github.com/iguanesolutions/go-systemd/v5/notify"
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/fs/rc/rcflags"
-	"github.com/rclone/rclone/fs/rc/rcserver"
-	"github.com/rclone/rclone/lib/atexit"
 	"github.com/spf13/cobra"
 )
 

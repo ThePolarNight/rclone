@@ -10,15 +10,15 @@ import (
 	"testing"
 	"time"
 
+	_ "github.com/ThePolarNight/rclone/backend/all" // import all backends
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/accounting"
+	"github.com/ThePolarNight/rclone/fs/filter"
+	"github.com/ThePolarNight/rclone/fs/fserrors"
+	"github.com/ThePolarNight/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/fs/operations"
+	"github.com/ThePolarNight/rclone/fstest"
 	"github.com/pkg/errors"
-	_ "github.com/rclone/rclone/backend/all" // import all backends
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/accounting"
-	"github.com/rclone/rclone/fs/filter"
-	"github.com/rclone/rclone/fs/fserrors"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/text/unicode/norm"

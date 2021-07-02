@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs"
 )
 
 // Options is options for creating the vfs

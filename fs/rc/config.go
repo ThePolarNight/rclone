@@ -7,9 +7,9 @@ package rc
 import (
 	"context"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/filter"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/filter"
 )
 
 var (

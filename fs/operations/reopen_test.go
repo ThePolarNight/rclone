@@ -6,11 +6,11 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/fstest/mockobject"
+	"github.com/ThePolarNight/rclone/lib/readers"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fstest/mockobject"
-	"github.com/rclone/rclone/lib/readers"
 	"github.com/stretchr/testify/assert"
 )
 

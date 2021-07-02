@@ -10,11 +10,11 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/vfs"
 	"github.com/pkg/errors"
 	"github.com/pkg/sftp"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/vfs"
 	"golang.org/x/crypto/ssh"
 )
 

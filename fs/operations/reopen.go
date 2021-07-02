@@ -5,9 +5,9 @@ import (
 	"io"
 	"sync"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/fserrors"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/fserrors"
 )
 
 // ReOpen is a wrapper for an object reader which reopens the stream on error

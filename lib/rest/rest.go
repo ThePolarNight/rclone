@@ -15,9 +15,9 @@ import (
 	"net/url"
 	"sync"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/lib/readers"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/lib/readers"
 )
 
 // Client contains the info to sustain the API

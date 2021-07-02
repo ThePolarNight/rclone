@@ -13,10 +13,10 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/stretchr/testify/require"
 
+	"github.com/ThePolarNight/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/fs/fserrors"
+	"github.com/ThePolarNight/rclone/lib/pacer"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/fserrors"
-	"github.com/rclone/rclone/lib/pacer"
 	"github.com/stretchr/testify/assert"
 )
 

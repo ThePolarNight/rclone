@@ -3,8 +3,8 @@ package vfscommon
 import (
 	"fmt"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/lib/errors"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/lib/errors"
 )
 
 // CacheMode controls the functionality of the cache

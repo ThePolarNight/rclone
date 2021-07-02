@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/rclone/rclone/backend/local" // import the local backend
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/vfs/vfscommon"
+	_ "github.com/ThePolarNight/rclone/backend/local" // import the local backend
+	"github.com/ThePolarNight/rclone/fstest"
+	"github.com/ThePolarNight/rclone/vfs/vfscommon"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

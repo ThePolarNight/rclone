@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/cache"
+	"github.com/ThePolarNight/rclone/fs/rc"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/cache"
-	"github.com/rclone/rclone/fs/rc"
 )
 
 const getVFSHelp = ` 

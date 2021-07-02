@@ -5,11 +5,11 @@ import (
 	"path"
 	"time"
 
+	"github.com/ThePolarNight/rclone/backend/crypt"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/fs/walk"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/backend/crypt"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/walk"
 )
 
 // ListJSONItem in the struct which gets marshalled for each line

@@ -7,10 +7,10 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/fserrors"
 	"github.com/aalpar/deheap"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/fserrors"
 )
 
 // compare two items for order by

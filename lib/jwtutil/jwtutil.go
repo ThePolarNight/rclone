@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/lib/oauthutil"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/lib/oauthutil"
 
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/jws"

@@ -8,8 +8,8 @@ import (
 	"io/ioutil"
 	"time"
 
+	"github.com/ThePolarNight/rclone/fs"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
 )
 
 // AfterEpoch returns the time since the epoch for the given time

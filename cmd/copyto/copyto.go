@@ -3,9 +3,9 @@ package copyto
 import (
 	"context"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fs/sync"
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/fs/operations"
+	"github.com/ThePolarNight/rclone/fs/sync"
 	"github.com/spf13/cobra"
 )
 

@@ -10,8 +10,8 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/ThePolarNight/rclone/fs"
 	systemd "github.com/iguanesolutions/go-systemd/v5"
-	"github.com/rclone/rclone/fs"
 	"github.com/sirupsen/logrus"
 )
 

@@ -12,12 +12,12 @@ import (
 	"strings"
 	"testing"
 
+	_ "github.com/ThePolarNight/rclone/backend/local"
+	"github.com/ThePolarNight/rclone/cmd/serve/servetest"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/fs/config/obscure"
 	"github.com/pkg/sftp"
-	_ "github.com/rclone/rclone/backend/local"
-	"github.com/rclone/rclone/cmd/serve/servetest"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/obscure"
 	"github.com/stretchr/testify/require"
 )
 

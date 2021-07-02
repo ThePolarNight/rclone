@@ -19,15 +19,15 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/rclone/rclone/backend/all" // import all the backends
-	"github.com/rclone/rclone/cmd/mountlib"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/walk"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/lib/file"
-	"github.com/rclone/rclone/vfs"
-	"github.com/rclone/rclone/vfs/vfscommon"
-	"github.com/rclone/rclone/vfs/vfsflags"
+	_ "github.com/ThePolarNight/rclone/backend/all" // import all the backends
+	"github.com/ThePolarNight/rclone/cmd/mountlib"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/walk"
+	"github.com/ThePolarNight/rclone/fstest"
+	"github.com/ThePolarNight/rclone/lib/file"
+	"github.com/ThePolarNight/rclone/vfs"
+	"github.com/ThePolarNight/rclone/vfs/vfscommon"
+	"github.com/ThePolarNight/rclone/vfs/vfsflags"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

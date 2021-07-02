@@ -3,13 +3,13 @@ package cryptcheck
 import (
 	"context"
 
+	"github.com/ThePolarNight/rclone/backend/crypt"
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/cmd/check"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/fs/operations"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/backend/crypt"
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/cmd/check"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/operations"
 	"github.com/spf13/cobra"
 )
 

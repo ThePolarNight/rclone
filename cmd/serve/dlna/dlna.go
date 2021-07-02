@@ -12,16 +12,16 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/cmd/serve/dlna/data"
+	"github.com/ThePolarNight/rclone/cmd/serve/dlna/dlnaflags"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/vfs"
+	"github.com/ThePolarNight/rclone/vfs/vfsflags"
 	dms_dlna "github.com/anacrolix/dms/dlna"
 	"github.com/anacrolix/dms/soap"
 	"github.com/anacrolix/dms/ssdp"
 	"github.com/anacrolix/dms/upnp"
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/cmd/serve/dlna/data"
-	"github.com/rclone/rclone/cmd/serve/dlna/dlnaflags"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/vfs"
-	"github.com/rclone/rclone/vfs/vfsflags"
 	"github.com/spf13/cobra"
 )
 

@@ -8,12 +8,12 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configflags"
-	"github.com/rclone/rclone/fs/filter/filterflags"
-	"github.com/rclone/rclone/fs/log/logflags"
-	"github.com/rclone/rclone/fs/rc/rcflags"
-	"github.com/rclone/rclone/lib/atexit"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config/configflags"
+	"github.com/ThePolarNight/rclone/fs/filter/filterflags"
+	"github.com/ThePolarNight/rclone/fs/log/logflags"
+	"github.com/ThePolarNight/rclone/fs/rc/rcflags"
+	"github.com/ThePolarNight/rclone/lib/atexit"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

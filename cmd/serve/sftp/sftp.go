@@ -7,14 +7,14 @@ package sftp
 import (
 	"context"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/cmd/serve/proxy"
-	"github.com/rclone/rclone/cmd/serve/proxy/proxyflags"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/flags"
-	"github.com/rclone/rclone/fs/rc"
-	"github.com/rclone/rclone/vfs"
-	"github.com/rclone/rclone/vfs/vfsflags"
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/cmd/serve/proxy"
+	"github.com/ThePolarNight/rclone/cmd/serve/proxy/proxyflags"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config/flags"
+	"github.com/ThePolarNight/rclone/fs/rc"
+	"github.com/ThePolarNight/rclone/vfs"
+	"github.com/ThePolarNight/rclone/vfs/vfsflags"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

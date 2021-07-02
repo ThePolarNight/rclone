@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fstest/mockfs"
-	"github.com/rclone/rclone/fstest/mockobject"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/fstest/mockfs"
+	"github.com/ThePolarNight/rclone/fstest/mockobject"
 	"github.com/stretchr/testify/assert"
 )
 

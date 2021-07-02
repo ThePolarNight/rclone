@@ -4,12 +4,12 @@ import (
 	"context"
 	"testing"
 
-	_ "github.com/rclone/rclone/backend/local"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/fs/config/configfile"
-	"github.com/rclone/rclone/fs/config/obscure"
-	"github.com/rclone/rclone/fs/rc"
+	_ "github.com/ThePolarNight/rclone/backend/local"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config"
+	"github.com/ThePolarNight/rclone/fs/config/configfile"
+	"github.com/ThePolarNight/rclone/fs/config/obscure"
+	"github.com/ThePolarNight/rclone/fs/rc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

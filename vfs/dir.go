@@ -11,14 +11,14 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/dirtree"
+	"github.com/ThePolarNight/rclone/fs/list"
+	"github.com/ThePolarNight/rclone/fs/log"
+	"github.com/ThePolarNight/rclone/fs/operations"
+	"github.com/ThePolarNight/rclone/fs/walk"
+	"github.com/ThePolarNight/rclone/vfs/vfscommon"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/dirtree"
-	"github.com/rclone/rclone/fs/list"
-	"github.com/rclone/rclone/fs/log"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fs/walk"
-	"github.com/rclone/rclone/vfs/vfscommon"
 )
 
 // Dir represents a directory entry

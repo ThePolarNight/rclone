@@ -16,13 +16,13 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/ThePolarNight/rclone/cmd/mountlib"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/lib/atexit"
+	"github.com/ThePolarNight/rclone/lib/buildinfo"
+	"github.com/ThePolarNight/rclone/vfs"
 	"github.com/billziss-gh/cgofuse/fuse"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/cmd/mountlib"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/lib/atexit"
-	"github.com/rclone/rclone/lib/buildinfo"
-	"github.com/rclone/rclone/vfs"
 )
 
 func init() {

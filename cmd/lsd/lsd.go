@@ -4,11 +4,11 @@ import (
 	"context"
 	"os"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/cmd/ls/lshelp"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/flags"
-	"github.com/rclone/rclone/fs/operations"
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/cmd/ls/lshelp"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config/flags"
+	"github.com/ThePolarNight/rclone/fs/operations"
 	"github.com/spf13/cobra"
 )
 

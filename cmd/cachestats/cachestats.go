@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/ThePolarNight/rclone/backend/cache"
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/fs"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/backend/cache"
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/fs"
 	"github.com/spf13/cobra"
 )
 

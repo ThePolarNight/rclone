@@ -14,18 +14,18 @@ import (
 	"runtime"
 	"syscall/js"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/rc"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/rc"
 
 	// Core functionality we need
-	_ "github.com/rclone/rclone/fs/operations"
-	_ "github.com/rclone/rclone/fs/sync"
+	_ "github.com/ThePolarNight/rclone/fs/operations"
+	_ "github.com/ThePolarNight/rclone/fs/sync"
 
-	//	_ "github.com/rclone/rclone/backend/all" // import all backends
+	//	_ "github.com/ThePolarNight/rclone/backend/all" // import all backends
 
 	// Backends
-	_ "github.com/rclone/rclone/backend/memory"
+	_ "github.com/ThePolarNight/rclone/backend/memory"
 )
 
 var (

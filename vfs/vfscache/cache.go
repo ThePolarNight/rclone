@@ -13,17 +13,17 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ThePolarNight/rclone/fs"
+	fscache "github.com/ThePolarNight/rclone/fs/cache"
+	"github.com/ThePolarNight/rclone/fs/config"
+	"github.com/ThePolarNight/rclone/fs/fserrors"
+	"github.com/ThePolarNight/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/fs/operations"
+	"github.com/ThePolarNight/rclone/lib/file"
+	"github.com/ThePolarNight/rclone/vfs/vfscache/writeback"
+	"github.com/ThePolarNight/rclone/vfs/vfscommon"
 	sysdnotify "github.com/iguanesolutions/go-systemd/v5/notify"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	fscache "github.com/rclone/rclone/fs/cache"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/fs/fserrors"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/lib/file"
-	"github.com/rclone/rclone/vfs/vfscache/writeback"
-	"github.com/rclone/rclone/vfs/vfscommon"
 )
 
 // NB as Cache and Item are tightly linked it is necessary to have a

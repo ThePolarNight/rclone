@@ -7,8 +7,8 @@ package cmount
 import (
 	"os"
 
+	"github.com/ThePolarNight/rclone/cmd/mountlib"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/cmd/mountlib"
 )
 
 func getMountpoint(mountPath string, opt *mountlib.Options) (string, error) {

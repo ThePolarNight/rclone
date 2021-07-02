@@ -3,8 +3,8 @@ package config
 import (
 	"context"
 
+	"github.com/ThePolarNight/rclone/fs"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
 )
 
 // Authorize is for remote authorization of headless machines.

@@ -7,8 +7,8 @@ import (
 	"log"
 	"path"
 
+	"github.com/ThePolarNight/rclone/fs"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
 	yaml "gopkg.in/yaml.v2"
 )
 

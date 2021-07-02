@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"syscall"
 
-	"github.com/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs"
 	"golang.org/x/sys/unix"
 )
 

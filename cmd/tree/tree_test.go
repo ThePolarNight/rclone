@@ -5,10 +5,10 @@ import (
 	"context"
 	"testing"
 
+	_ "github.com/ThePolarNight/rclone/backend/local"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fstest"
 	"github.com/a8m/tree"
-	_ "github.com/rclone/rclone/backend/local"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fstest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

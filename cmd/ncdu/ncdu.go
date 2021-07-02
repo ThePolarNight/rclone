@@ -12,14 +12,14 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/cmd/ncdu/scan"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/operations"
 	"github.com/atotto/clipboard"
 	runewidth "github.com/mattn/go-runewidth"
 	termbox "github.com/nsf/termbox-go"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/cmd/ncdu/scan"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/operations"
 	"github.com/spf13/cobra"
 )
 

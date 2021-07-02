@@ -6,8 +6,8 @@ import (
 
 	"os"
 
-	"github.com/rclone/rclone/cmd"
-	"github.com/rclone/rclone/fs/config/obscure"
+	"github.com/ThePolarNight/rclone/cmd"
+	"github.com/ThePolarNight/rclone/fs/config/obscure"
 	"github.com/spf13/cobra"
 )
 

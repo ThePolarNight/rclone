@@ -18,14 +18,14 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/ThePolarNight/rclone/cmd/serve/proxy"
+	"github.com/ThePolarNight/rclone/cmd/serve/proxy/proxyflags"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config"
+	"github.com/ThePolarNight/rclone/lib/env"
+	"github.com/ThePolarNight/rclone/vfs"
+	"github.com/ThePolarNight/rclone/vfs/vfsflags"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/cmd/serve/proxy"
-	"github.com/rclone/rclone/cmd/serve/proxy/proxyflags"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/lib/env"
-	"github.com/rclone/rclone/vfs"
-	"github.com/rclone/rclone/vfs/vfsflags"
 	"golang.org/x/crypto/ssh"
 )
 

@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/rclone/rclone/backend/local"
-	_ "github.com/rclone/rclone/cmd/cmount"
-	_ "github.com/rclone/rclone/cmd/mount"
-	_ "github.com/rclone/rclone/cmd/mount2"
-	"github.com/rclone/rclone/fs/config/configfile"
-	"github.com/rclone/rclone/fs/rc"
+	_ "github.com/ThePolarNight/rclone/backend/local"
+	_ "github.com/ThePolarNight/rclone/cmd/cmount"
+	_ "github.com/ThePolarNight/rclone/cmd/mount"
+	_ "github.com/ThePolarNight/rclone/cmd/mount2"
+	"github.com/ThePolarNight/rclone/fs/config/configfile"
+	"github.com/ThePolarNight/rclone/fs/rc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

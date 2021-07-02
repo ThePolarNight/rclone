@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"sync"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config"
 	"github.com/Unknwon/goconfig"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
 )
 
 // Special value indicating in memory config file. Empty string works also.

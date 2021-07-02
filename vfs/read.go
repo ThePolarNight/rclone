@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/accounting"
+	"github.com/ThePolarNight/rclone/fs/chunkedreader"
+	"github.com/ThePolarNight/rclone/fs/hash"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/accounting"
-	"github.com/rclone/rclone/fs/chunkedreader"
-	"github.com/rclone/rclone/fs/hash"
 )
 
 // ReadFileHandle is an open for read file handle on a File

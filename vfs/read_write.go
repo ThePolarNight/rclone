@@ -6,10 +6,10 @@ import (
 	"os"
 	"sync"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/log"
+	"github.com/ThePolarNight/rclone/vfs/vfscache"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/log"
-	"github.com/rclone/rclone/vfs/vfscache"
 )
 
 // RWFileHandle is a handle that can be open for read and write.

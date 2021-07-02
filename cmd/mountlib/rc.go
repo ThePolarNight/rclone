@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/rc"
+	"github.com/ThePolarNight/rclone/vfs"
+	"github.com/ThePolarNight/rclone/vfs/vfscommon"
+	"github.com/ThePolarNight/rclone/vfs/vfsflags"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/rc"
-	"github.com/rclone/rclone/vfs"
-	"github.com/rclone/rclone/vfs/vfscommon"
-	"github.com/rclone/rclone/vfs/vfsflags"
 )
 
 // MountInfo defines the configuration for a mount

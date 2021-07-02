@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/rclone/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/fs/config/configmap"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
