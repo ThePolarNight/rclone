@@ -155,10 +155,11 @@ func (f *File) Readlink(ctx context.Context, req *fuse.ReadlinkRequest) (ret str
 
 // create symbolic link
 func (f *File) Symlink(ctx context.Context, req *fuse.SymlinkRequest) (node fusefs.Node, err error) {
-	defer log.Trace(d, "target=%q; new_name=%q", req.Target, req.NewName)("node=%v, err=%v", &node, &err)
+	defer log.Trace(f, "target=%q; new_name=%q", req.Target, req.NewName)("node=%v, err=%v", &node, &err)
 
 	symlinkName := req.NewName + ".rclonelink"
-	file, err := f.File.Create(symlinkName, os.O_RDWR)
+	d := f.d
+	file, err := d.File.Create(symlinkName, os.O_RDWR)
 	if err != nil {
 		defer log.Trace(f, "failed to create symlink file "+symlinkName)
 		return nil, translateError(err)
