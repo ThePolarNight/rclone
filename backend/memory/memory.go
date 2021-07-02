@@ -14,13 +14,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ThePolarNight/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/configstruct"
+	"github.com/ThePolarNight/rclone/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/rclone/fs/walk"
+	"github.com/ThePolarNight/rclone/rclone/lib/bucket"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/walk"
-	"github.com/rclone/rclone/lib/bucket"
 )
 
 var (

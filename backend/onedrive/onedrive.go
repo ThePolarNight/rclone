@@ -19,25 +19,25 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ThePolarNight/rclone/rclone/backend/onedrive/api"
+	"github.com/ThePolarNight/rclone/rclone/backend/onedrive/quickxorhash"
+	"github.com/ThePolarNight/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/rclone/fs/config"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/configstruct"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/obscure"
+	"github.com/ThePolarNight/rclone/rclone/fs/fserrors"
+	"github.com/ThePolarNight/rclone/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/rclone/fs/operations"
+	"github.com/ThePolarNight/rclone/rclone/fs/walk"
+	"github.com/ThePolarNight/rclone/rclone/lib/atexit"
+	"github.com/ThePolarNight/rclone/rclone/lib/dircache"
+	"github.com/ThePolarNight/rclone/rclone/lib/encoder"
+	"github.com/ThePolarNight/rclone/rclone/lib/oauthutil"
+	"github.com/ThePolarNight/rclone/rclone/lib/pacer"
+	"github.com/ThePolarNight/rclone/rclone/lib/readers"
+	"github.com/ThePolarNight/rclone/rclone/lib/rest"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/backend/onedrive/api"
-	"github.com/rclone/rclone/backend/onedrive/quickxorhash"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/config/obscure"
-	"github.com/rclone/rclone/fs/fserrors"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fs/walk"
-	"github.com/rclone/rclone/lib/atexit"
-	"github.com/rclone/rclone/lib/dircache"
-	"github.com/rclone/rclone/lib/encoder"
-	"github.com/rclone/rclone/lib/oauthutil"
-	"github.com/rclone/rclone/lib/pacer"
-	"github.com/rclone/rclone/lib/readers"
-	"github.com/rclone/rclone/lib/rest"
 	"golang.org/x/oauth2"
 )
 
@@ -795,7 +795,7 @@ func NewFs(ctx context.Context, name, root string, m configmap.Mapper) (fs.Fs, e
 		}
 		// XXX: update the old f here instead of returning tempF, since
 		// `features` were already filled with functions having *f as a receiver.
-		// See https://github.com/rclone/rclone/issues/2182
+		// See https://github.com/ThePolarNight/rclone/rclone/issues/2182
 		f.dirCache = tempF.dirCache
 		f.root = tempF.root
 		// return an error with an fs which points to the parent

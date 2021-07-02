@@ -16,15 +16,15 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ThePolarNight/rclone/rclone/backend/swift"
+	"github.com/ThePolarNight/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/configstruct"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/obscure"
+	"github.com/ThePolarNight/rclone/rclone/fs/fshttp"
+	"github.com/ThePolarNight/rclone/rclone/lib/oauthutil"
 	swiftLib "github.com/ncw/swift/v2"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/backend/swift"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/config/obscure"
-	"github.com/rclone/rclone/fs/fshttp"
-	"github.com/rclone/rclone/lib/oauthutil"
 	"golang.org/x/oauth2"
 )
 

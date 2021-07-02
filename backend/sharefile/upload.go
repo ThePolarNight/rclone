@@ -15,12 +15,12 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/ThePolarNight/rclone/backend/sharefile/api"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/accounting"
+	"github.com/ThePolarNight/rclone/lib/readers"
+	"github.com/ThePolarNight/rclone/lib/rest"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/backend/sharefile/api"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/accounting"
-	"github.com/rclone/rclone/lib/readers"
-	"github.com/rclone/rclone/lib/rest"
 )
 
 // largeUpload is used to control the upload of large files which need chunking

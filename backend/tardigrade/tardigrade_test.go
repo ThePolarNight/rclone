@@ -6,8 +6,8 @@ package tardigrade_test
 import (
 	"testing"
 
-	"github.com/rclone/rclone/backend/tardigrade"
-	"github.com/rclone/rclone/fstest/fstests"
+	"github.com/ThePolarNight/rclone/rclone/backend/tardigrade"
+	"github.com/ThePolarNight/rclone/rclone/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

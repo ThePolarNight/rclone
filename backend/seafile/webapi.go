@@ -11,11 +11,11 @@ import (
 	"path"
 	"strings"
 
+	"github.com/ThePolarNight/rclone/rclone/backend/seafile/api"
+	"github.com/ThePolarNight/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/rclone/lib/readers"
+	"github.com/ThePolarNight/rclone/rclone/lib/rest"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/backend/seafile/api"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/lib/readers"
-	"github.com/rclone/rclone/lib/rest"
 )
 
 // Start of the API URLs

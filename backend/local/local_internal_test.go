@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fstest"
-	"github.com/rclone/rclone/lib/file"
-	"github.com/rclone/rclone/lib/readers"
+	"github.com/ThePolarNight/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/rclone/fstest"
+	"github.com/ThePolarNight/rclone/rclone/lib/file"
+	"github.com/ThePolarNight/rclone/rclone/lib/readers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

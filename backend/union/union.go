@@ -11,15 +11,15 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ThePolarNight/rclone/rclone/backend/union/policy"
+	"github.com/ThePolarNight/rclone/rclone/backend/union/upstream"
+	"github.com/ThePolarNight/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/rclone/fs/config/configstruct"
+	"github.com/ThePolarNight/rclone/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/rclone/fs/operations"
+	"github.com/ThePolarNight/rclone/rclone/fs/walk"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/backend/union/policy"
-	"github.com/rclone/rclone/backend/union/upstream"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/config/configmap"
-	"github.com/rclone/rclone/fs/config/configstruct"
-	"github.com/rclone/rclone/fs/hash"
-	"github.com/rclone/rclone/fs/operations"
-	"github.com/rclone/rclone/fs/walk"
 )
 
 // Register with Fs

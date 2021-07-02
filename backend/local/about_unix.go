@@ -7,8 +7,8 @@ import (
 	"os"
 	"syscall"
 
+	"github.com/ThePolarNight/rclone/rclone/fs"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
 )
 
 // About gets quota information

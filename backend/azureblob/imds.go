@@ -12,9 +12,9 @@ import (
 	"net/http"
 
 	"github.com/Azure/go-autorest/autorest/adal"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/fshttp"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/fs"
-	"github.com/rclone/rclone/fs/fshttp"
 )
 
 const (

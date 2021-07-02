@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ThePolarNight/rclone/rclone/backend/union/upstream"
+	"github.com/ThePolarNight/rclone/rclone/fs"
 	"github.com/pkg/errors"
-	"github.com/rclone/rclone/backend/union/upstream"
-	"github.com/rclone/rclone/fs"
 )
 
 // Object describes a union Object
