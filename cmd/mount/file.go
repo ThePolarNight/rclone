@@ -159,7 +159,7 @@ func (f *File) Symlink(ctx context.Context, req *fuse.SymlinkRequest) (node fuse
 
 	symlinkName := req.NewName + ".rclonelink"
 	d := f.Dir()
-	file, err := d.File.Create(symlinkName, os.O_RDWR)
+	file, err := d.Create(symlinkName, os.O_RDWR)
 	if err != nil {
 		defer log.Trace(f, "failed to create symlink file "+symlinkName)
 		return nil, translateError(err)
