@@ -4,8 +4,8 @@ package hubic_test
 import (
 	"testing"
 
-	"github.com/ThePolarNight/rclone/rclone/backend/hubic"
-	"github.com/ThePolarNight/rclone/rclone/fstest/fstests"
+	"github.com/ThePolarNight/rclone/backend/hubic"
+	"github.com/ThePolarNight/rclone/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

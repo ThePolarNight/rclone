@@ -10,7 +10,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/ThePolarNight/rclone/rclone/lib/readers"
+	"github.com/ThePolarNight/rclone/lib/readers"
 	"github.com/pkg/errors"
 )
 

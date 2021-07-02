@@ -4,7 +4,7 @@ package memory
 import (
 	"testing"
 
-	"github.com/ThePolarNight/rclone/rclone/fstest/fstests"
+	"github.com/ThePolarNight/rclone/fstest/fstests"
 )
 
 // TestIntegration runs integration tests against the remote

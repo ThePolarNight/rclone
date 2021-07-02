@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ThePolarNight/rclone/rclone/rclone/fs/object"
-	"github.com/ThePolarNight/rclone/rclone/rclone/fstest"
-	"github.com/ThePolarNight/rclone/rclone/rclone/fstest/fstests"
-	"github.com/ThePolarNight/rclone/rclone/rclone/lib/random"
+	"github.com/ThePolarNight/rclone/rclone/fs/object"
+	"github.com/ThePolarNight/rclone/rclone/fstest"
+	"github.com/ThePolarNight/rclone/rclone/fstest/fstests"
+	"github.com/ThePolarNight/rclone/rclone/lib/random"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

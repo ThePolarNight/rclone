@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/ThePolarNight/rclone/rclone/fs/fserrors"
+	"github.com/ThePolarNight/rclone/fs/fserrors"
 	"github.com/putdotio/go-putio/putio"
 )
 

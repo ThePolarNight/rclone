@@ -16,16 +16,16 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/ThePolarNight/rclone/rclone/fs"
-	"github.com/ThePolarNight/rclone/rclone/fs/accounting"
-	"github.com/ThePolarNight/rclone/rclone/fs/config"
-	"github.com/ThePolarNight/rclone/rclone/fs/config/configmap"
-	"github.com/ThePolarNight/rclone/rclone/fs/config/configstruct"
-	"github.com/ThePolarNight/rclone/rclone/fs/fserrors"
-	"github.com/ThePolarNight/rclone/rclone/fs/hash"
-	"github.com/ThePolarNight/rclone/rclone/lib/encoder"
-	"github.com/ThePolarNight/rclone/rclone/lib/file"
-	"github.com/ThePolarNight/rclone/rclone/lib/readers"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/accounting"
+	"github.com/ThePolarNight/rclone/fs/config"
+	"github.com/ThePolarNight/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/fs/config/configstruct"
+	"github.com/ThePolarNight/rclone/fs/fserrors"
+	"github.com/ThePolarNight/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/lib/encoder"
+	"github.com/ThePolarNight/rclone/lib/file"
+	"github.com/ThePolarNight/rclone/lib/readers"
 	"github.com/pkg/errors"
 )
 
@@ -103,7 +103,7 @@ are being uploaded and aborts with a message which starts "can't copy
 - source file is being updated" if the file changes during upload.
 
 However on some file systems this modification time check may fail (e.g.
-[Glusterfs #2206](https://github.com/ThePolarNight/rclone/rclone/issues/2206)) so this
+[Glusterfs #2206](https://github.com/ThePolarNight/rclone/issues/2206)) so this
 check can be disabled with this flag.
 
 If this flag is set, rclone will use its best efforts to transfer a

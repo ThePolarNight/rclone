@@ -6,7 +6,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/ThePolarNight/rclone/rclone/lib/readers"
+	"github.com/ThePolarNight/rclone/lib/readers"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

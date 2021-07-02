@@ -6,13 +6,13 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/ThePolarNight/rclone/rclone/fs"
-	"github.com/ThePolarNight/rclone/rclone/fs/config"
-	"github.com/ThePolarNight/rclone/rclone/fs/config/configmap"
-	"github.com/ThePolarNight/rclone/rclone/fs/config/obscure"
-	"github.com/ThePolarNight/rclone/rclone/lib/dircache"
-	"github.com/ThePolarNight/rclone/rclone/lib/encoder"
-	"github.com/ThePolarNight/rclone/rclone/lib/oauthutil"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config"
+	"github.com/ThePolarNight/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/fs/config/obscure"
+	"github.com/ThePolarNight/rclone/lib/dircache"
+	"github.com/ThePolarNight/rclone/lib/encoder"
+	"github.com/ThePolarNight/rclone/lib/oauthutil"
 	"golang.org/x/oauth2"
 )
 

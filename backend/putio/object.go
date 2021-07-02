@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ThePolarNight/rclone/rclone/fs"
-	"github.com/ThePolarNight/rclone/rclone/fs/fserrors"
-	"github.com/ThePolarNight/rclone/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/fserrors"
+	"github.com/ThePolarNight/rclone/fs/hash"
 	"github.com/pkg/errors"
 	"github.com/putdotio/go-putio/putio"
 )

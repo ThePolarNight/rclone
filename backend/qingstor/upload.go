@@ -13,8 +13,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/ThePolarNight/rclone/rclone/fs"
-	"github.com/ThePolarNight/rclone/rclone/lib/atexit"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/lib/atexit"
 	"github.com/pkg/errors"
 	qs "github.com/yunify/qingstor-sdk-go/v3/service"
 )

@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/ThePolarNight/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs"
 	"golang.org/x/sys/unix"
 )
 

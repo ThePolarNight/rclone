@@ -7,7 +7,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/ThePolarNight/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs"
 	"github.com/pkg/errors"
 )
 

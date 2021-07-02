@@ -11,10 +11,10 @@ import (
 	"path"
 	"strings"
 
-	"github.com/ThePolarNight/rclone/rclone/backend/seafile/api"
-	"github.com/ThePolarNight/rclone/rclone/fs"
-	"github.com/ThePolarNight/rclone/rclone/lib/readers"
-	"github.com/ThePolarNight/rclone/rclone/lib/rest"
+	"github.com/ThePolarNight/rclone/backend/seafile/api"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/lib/readers"
+	"github.com/ThePolarNight/rclone/lib/rest"
 	"github.com/pkg/errors"
 )
 

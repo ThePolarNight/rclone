@@ -13,15 +13,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ThePolarNight/rclone/rclone/fs"
-	"github.com/ThePolarNight/rclone/rclone/fs/config/configmap"
-	"github.com/ThePolarNight/rclone/rclone/fs/config/configstruct"
-	"github.com/ThePolarNight/rclone/rclone/fs/fshttp"
-	"github.com/ThePolarNight/rclone/rclone/fs/hash"
-	"github.com/ThePolarNight/rclone/rclone/lib/dircache"
-	"github.com/ThePolarNight/rclone/rclone/lib/oauthutil"
-	"github.com/ThePolarNight/rclone/rclone/lib/pacer"
-	"github.com/ThePolarNight/rclone/rclone/lib/readers"
+	"github.com/ThePolarNight/rclone/fs"
+	"github.com/ThePolarNight/rclone/fs/config/configmap"
+	"github.com/ThePolarNight/rclone/fs/config/configstruct"
+	"github.com/ThePolarNight/rclone/fs/fshttp"
+	"github.com/ThePolarNight/rclone/fs/hash"
+	"github.com/ThePolarNight/rclone/lib/dircache"
+	"github.com/ThePolarNight/rclone/lib/oauthutil"
+	"github.com/ThePolarNight/rclone/lib/pacer"
+	"github.com/ThePolarNight/rclone/lib/readers"
 	"github.com/pkg/errors"
 	"github.com/putdotio/go-putio/putio"
 )
@@ -118,7 +118,7 @@ func NewFs(ctx context.Context, name, root string, m configmap.Mapper) (f fs.Fs,
 		}
 		// XXX: update the old f here instead of returning tempF, since
 		// `features` were already filled with functions having *f as a receiver.
-		// See https://github.com/ThePolarNight/rclone/rclone/issues/2182
+		// See https://github.com/ThePolarNight/rclone/issues/2182
 		p.dirCache = tempF.dirCache
 		p.root = tempF.root
 		return p, fs.ErrorIsFile

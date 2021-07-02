@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ThePolarNight/rclone/rclone/backend/union/upstream"
-	"github.com/ThePolarNight/rclone/rclone/fs"
+	"github.com/ThePolarNight/rclone/backend/union/upstream"
+	"github.com/ThePolarNight/rclone/fs"
 	"github.com/pkg/errors"
 )
 
