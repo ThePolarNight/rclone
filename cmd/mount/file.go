@@ -154,31 +154,31 @@ func (f *File) Readlink(ctx context.Context, req *fuse.ReadlinkRequest) (ret str
 }
 
 // create symbolic link
-func (d *Dir) Symlink(ctx context.Context, req *fuse.SymlinkRequest) (node fusefs.Node, err error) {
+func (f *File) Symlink(ctx context.Context, req *fuse.SymlinkRequest) (node fusefs.Node, err error) {
 	defer log.Trace(d, "target=%q; new_name=%q", req.Target, req.NewName)("node=%v, err=%v", &node, &err)
 
 	symlinkName := req.NewName + ".rclonelink"
-	file, err := d.File.Create(symlinkName, os.O_RDWR)
+	file, err := f.File.Create(symlinkName, os.O_RDWR)
 	if err != nil {
-		defer log.Trace(d, "failed to create symlink file "+symlinkName)
+		defer log.Trace(f, "failed to create symlink file "+symlinkName)
 		return nil, translateError(err)
 	}
 	fh, err := file.Open(os.O_RDWR | os.O_CREATE)
 	if err != nil {
-		defer log.Trace(d, "failed to open symlink file "+symlinkName)
+		defer log.Trace(f, "failed to open symlink file "+symlinkName)
 		return nil, translateError(err)
 	}
-	node = &File{file, d.fsys}
+	node = &File{file, f.fsys}
 
 	_, err2 := fh.WriteAt([]byte(req.Target), 0)
 	if err2 != nil {
-		defer log.Trace(d, "failed to write to symlink file "+symlinkName)
+		defer log.Trace(f, "failed to write to symlink file "+symlinkName)
 		return nil, translateError(err2)
 	}
 
 	err = fh.Release()
 	if err != nil {
-		defer log.Trace(d, "failed to close symlink file "+symlinkName)
+		defer log.Trace(f, "failed to close symlink file "+symlinkName)
 		return nil, translateError(err)
 	}
 
